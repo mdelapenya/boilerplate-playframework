@@ -6,6 +6,8 @@ lazy val root = (project in file(".")).enablePlugins(PlayJava)
 
 scalaVersion := "2.11.8"
 
+resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
+
 libraryDependencies += javaJpa
 
 // https://mvnrepository.com/artifact/dom4j/dom4j
