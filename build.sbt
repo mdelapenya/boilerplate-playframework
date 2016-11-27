@@ -21,3 +21,7 @@ libraryDependencies += javaWs % "test"
 // must exclude dom4j in hibernate core because it causes staxeventreader exceptions
 // http://stackoverflow.com/questions/36222306/caused-by-java-lang-classnotfoundexception-org-dom4j-io-staxeventreader
 libraryDependencies += "org.hibernate" % "hibernate-core" % "5.2.3.Final" exclude("dom4j", "dom4j") exclude("javax.transaction", "jta") exclude("org.slf4j", "slf4j-api")
+
+maintainer := "Manuel de la Peña <manuel.delapenya@liferay.com>"
+
+dockerExposedPorts in Docker := Seq(9000, 9443)
