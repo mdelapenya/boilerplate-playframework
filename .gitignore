@@ -1,8 +1,6 @@
 # Ignore Play! working directory #
 bin/
 /db
-.eclipse
-.history
 /lib/
 /logs/
 /modules
@@ -11,7 +9,10 @@ bin/
 /target
 tmp/
 test-result
-server.pid
-*.eml
 /dist/
+
 .cache
+.eclipse
+.history
+*.eml
+server.pid
